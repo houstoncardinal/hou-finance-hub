@@ -11,6 +11,8 @@ import Checks from "./pages/Checks.tsx";
 import Vendors from "./pages/Vendors.tsx";
 import Assistant from "./pages/Assistant.tsx";
 import NewEntry from "./pages/NewEntry.tsx";
+import Help from "./pages/Help.tsx";
+import Charts from "./pages/Charts.tsx";
 import Documents from "./pages/Documents.tsx";
 import CashFlow from "./pages/CashFlow.tsx";
 import Reports from "./pages/Reports.tsx";
@@ -34,6 +36,8 @@ const App = () => (
           <Route path="/reports" element={<Reports />} />
           <Route path="/assistant" element={<Assistant />} />
           <Route path="/new" element={<NewEntry />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/charts" element={<Charts />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

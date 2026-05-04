@@ -4,7 +4,7 @@
 
 /* HOU Inc. — Construction Finance OS
    Design language: editorial, premium, restrained.
-   Charcoal + ivory + Houston-sunset amber. */
+   Refined crimson + ivory + charcoal. */
 
 @layer base {
   :root {
@@ -26,20 +26,21 @@
     --muted: 35 16% 94%;
     --muted-foreground: 220 8% 42%;
 
-    --accent: 24 92% 54%;
+    /* Luxury crimson accent */
+    --accent: 358 62% 47%;
     --accent-foreground: 0 0% 100%;
-    --accent-soft: 30 95% 96%;
+    --accent-soft: 358 62% 96%;
 
     --success: 152 52% 36%;
     --success-foreground: 0 0% 100%;
     --warning: 38 92% 50%;
     --warning-foreground: 220 14% 11%;
-    --destructive: 0 72% 48%;
+    --destructive: 358 62% 47%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 30 12% 88%;
     --input: 30 12% 88%;
-    --ring: 24 92% 54%;
+    --ring: 358 62% 47%;
 
     --radius: 0.875rem;
 
@@ -49,8 +50,8 @@
     --ink: 220 14% 11%;
     --ink-soft: 220 10% 28%;
 
-    /* Gradients */
-    --gradient-sunset: linear-gradient(135deg, hsl(24 92% 54%), hsl(14 88% 48%));
+    /* Gradients — refined crimson */
+    --gradient-sunset: linear-gradient(135deg, hsl(358 62% 47%), hsl(0 60% 38%));
     --gradient-ink: linear-gradient(160deg, hsl(220 18% 14%), hsl(220 14% 9%));
     --gradient-ivory: linear-gradient(180deg, hsl(38 33% 98%), hsl(35 22% 94%));
     --gradient-sheen: linear-gradient(135deg, hsl(0 0% 100% / 0.6), hsl(0 0% 100% / 0));
@@ -58,68 +59,65 @@
     /* Shadows */
     --shadow-card: 0 1px 2px hsl(220 14% 11% / 0.04), 0 8px 24px -12px hsl(220 14% 11% / 0.08);
     --shadow-elevated: 0 1px 2px hsl(220 14% 11% / 0.06), 0 24px 48px -20px hsl(220 14% 11% / 0.18);
-    --shadow-glow: 0 0 0 1px hsl(24 92% 54% / 0.15), 0 12px 32px -12px hsl(24 92% 54% / 0.45);
+    --shadow-glow: 0 0 0 1px hsl(358 62% 47% / 0.15), 0 12px 32px -12px hsl(358 62% 47% / 0.35);
+    --shadow-sheet: 0 -4px 32px hsl(220 14% 11% / 0.14), 0 -1px 0 hsl(220 14% 11% / 0.06);
 
     /* Motion */
     --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 
+    /* Sidebar — dark with red accents */
     --sidebar-background: 220 16% 10%;
     --sidebar-foreground: 35 22% 92%;
-    --sidebar-primary: 24 92% 54%;
+    --sidebar-primary: 358 62% 47%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 14% 16%;
+    --sidebar-accent: 358 62% 18%;
     --sidebar-accent-foreground: 35 22% 95%;
     --sidebar-border: 220 14% 18%;
-    --sidebar-ring: 24 92% 54%;
+    --sidebar-ring: 358 62% 47%;
   }
 
   .dark {
     --background: 220 18% 7%;
     --foreground: 35 22% 94%;
-
     --card: 220 16% 10%;
     --card-foreground: 35 22% 94%;
-
     --popover: 220 16% 10%;
     --popover-foreground: 35 22% 94%;
-
     --primary: 35 22% 94%;
     --primary-foreground: 220 18% 7%;
-
     --secondary: 220 14% 14%;
     --secondary-foreground: 35 22% 94%;
-
     --muted: 220 14% 14%;
     --muted-foreground: 220 8% 62%;
-
-    --accent: 24 92% 56%;
-    --accent-foreground: 220 18% 7%;
-    --accent-soft: 24 40% 16%;
-
+    --accent: 358 62% 50%;
+    --accent-foreground: 0 0% 100%;
+    --accent-soft: 358 40% 16%;
     --success: 152 48% 50%;
     --warning: 38 92% 58%;
-    --destructive: 0 72% 56%;
-
+    --destructive: 358 62% 50%;
     --border: 220 14% 18%;
     --input: 220 14% 18%;
-    --ring: 24 92% 56%;
-
+    --ring: 358 62% 50%;
     --surface: 220 16% 10%;
     --surface-elevated: 220 16% 13%;
     --ink: 35 22% 94%;
     --ink-soft: 35 14% 78%;
-
     --gradient-ink: linear-gradient(160deg, hsl(220 18% 12%), hsl(220 18% 6%));
     --gradient-ivory: linear-gradient(180deg, hsl(220 16% 11%), hsl(220 18% 7%));
-
     --shadow-card: 0 1px 2px hsl(0 0% 0% / 0.4), 0 8px 24px -12px hsl(0 0% 0% / 0.5);
     --shadow-elevated: 0 1px 2px hsl(0 0% 0% / 0.5), 0 24px 48px -20px hsl(0 0% 0% / 0.7);
+    --shadow-sheet: 0 -4px 32px hsl(0 0% 0% / 0.5), 0 -1px 0 hsl(0 0% 0% / 0.4);
+    --sidebar-background: 220 18% 7%;
+    --sidebar-foreground: 35 22% 92%;
+    --sidebar-accent: 358 40% 16%;
+    --sidebar-accent-foreground: 35 22% 95%;
+    --sidebar-border: 220 14% 18%;
   }
 }
 
 @layer base {
   * { @apply border-border; }
-  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
@@ -146,6 +144,118 @@
   }
   .hairline { @apply border-t border-border; }
   .focus-ring { @apply outline-none ring-0 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background; }
+
+  /* Status badges */
+  .badge-pending {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11.5px] font-semibold;
+    background: hsl(38 92% 50% / 0.12);
+    color: hsl(28 80% 38%);
+    border: 1px solid hsl(38 92% 50% / 0.25);
+  }
+  .badge-cleared {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11.5px] font-semibold;
+    background: hsl(152 52% 36% / 0.1);
+    color: hsl(152 52% 30%);
+    border: 1px solid hsl(152 52% 36% / 0.22);
+  }
+  .badge-income {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11.5px] font-semibold;
+    background: hsl(152 52% 36% / 0.1);
+    color: hsl(152 52% 30%);
+    border: 1px solid hsl(152 52% 36% / 0.22);
+  }
+  .badge-expense {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11.5px] font-semibold;
+    background: hsl(var(--secondary));
+    color: hsl(var(--muted-foreground));
+    border: 1px solid hsl(var(--border));
+  }
+  .badge-check {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11.5px] font-semibold;
+    background: hsl(var(--accent-soft));
+    color: hsl(var(--accent));
+    border: 1px solid hsl(358 62% 47% / 0.2);
+  }
+
+  /* Entry Drawer sheet */
+  .entry-sheet {
+    @apply fixed inset-x-0 bottom-0 z-50 bg-card rounded-t-3xl;
+    box-shadow: var(--shadow-sheet);
+    max-height: 94vh;
+    overflow-y: auto;
+  }
+  @media (min-width: 1024px) {
+    .entry-sheet {
+      @apply inset-auto top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-3xl;
+      width: 520px;
+      max-height: 90vh;
+    }
+  }
+
+  /* Segmented control */
+  .seg-control {
+    @apply flex items-center p-1 bg-secondary rounded-xl gap-0.5;
+  }
+  .seg-btn {
+    @apply flex-1 py-2 px-3 rounded-lg text-[13px] font-medium transition-all duration-150 text-muted-foreground;
+  }
+  .seg-btn.active {
+    @apply bg-card text-foreground;
+    box-shadow: 0 1px 3px hsl(220 14% 11% / 0.12);
+  }
+
+  /* Quick pick chips */
+  .pick-chip {
+    @apply px-3 h-9 rounded-full text-[13px] font-medium transition-all duration-100 border border-transparent;
+    @apply bg-secondary text-muted-foreground hover:text-foreground hover:border-border;
+  }
+  .pick-chip.selected {
+    @apply bg-foreground text-background border-transparent;
+  }
+
+  /* Row hover actions */
+  .row-actions {
+    @apply flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-150;
+  }
+  @media (max-width: 1023px) {
+    .row-actions { @apply opacity-100; }
+  }
+
+  /* Amount input */
+  .amount-input {
+    font-family: 'Fraunces', ui-serif, Georgia, serif;
+    font-feature-settings: "tnum";
+    @apply bg-transparent outline-none w-full;
+    font-size: clamp(40px, 10vw, 64px);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+  }
+
+  /* Section divider */
+  .section-label {
+    @apply text-[10.5px] uppercase tracking-[0.18em] text-muted-foreground font-medium;
+  }
+
+  /* Pending check card */
+  .check-pending {
+    @apply rounded-2xl border-2 p-5 transition-all;
+    border-color: hsl(38 92% 50% / 0.3);
+    background: hsl(38 92% 50% / 0.04);
+  }
+  .check-pending:hover {
+    border-color: hsl(38 92% 50% / 0.5);
+    background: hsl(38 92% 50% / 0.07);
+  }
+
+  /* Input field */
+  .field-input {
+    @apply w-full h-11 px-3.5 rounded-xl bg-secondary/60 border border-transparent text-[14px] outline-none transition-all;
+    @apply focus:border-border focus:bg-card focus:shadow-sm placeholder:text-muted-foreground;
+  }
+  .field-textarea {
+    @apply w-full px-3.5 py-3 rounded-xl bg-secondary/60 border border-transparent text-[14px] outline-none transition-all resize-none;
+    @apply focus:border-border focus:bg-card focus:shadow-sm placeholder:text-muted-foreground;
+  }
 }
 
 @layer utilities {
@@ -155,5 +265,63 @@
   .shadow-card { box-shadow: var(--shadow-card); }
   .shadow-elevated { box-shadow: var(--shadow-elevated); }
   .shadow-glow { box-shadow: var(--shadow-glow); }
+  .shadow-sheet { box-shadow: var(--shadow-sheet); }
   .text-balance { text-wrap: balance; }
+
+  /* Animations */
+  .animate-slide-up { animation: slideUp 0.32s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .animate-fade-backdrop { animation: fadeBackdrop 0.22s ease-out both; }
+  .animate-scale-in { animation: scaleIn 0.28s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .animate-slide-down { animation: slideDown 0.25s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .animate-fade-in { animation: fadeIn 0.35s ease-out both; }
+  .animate-fade-in-up { animation: fadeInUp 0.4s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .animate-pulse-soft { animation: pulseSoft 2s ease-in-out infinite; }
+  .animate-shrink-out { animation: shrinkOut 0.2s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+  .stagger-1 { animation-delay: 0ms; }
+  .stagger-2 { animation-delay: 50ms; }
+  .stagger-3 { animation-delay: 100ms; }
+  .stagger-4 { animation-delay: 150ms; }
+  .stagger-5 { animation-delay: 200ms; }
+  .stagger-6 { animation-delay: 250ms; }
+  .stagger-7 { animation-delay: 300ms; }
+
+  .status-dot { @apply h-2 w-2 rounded-full inline-block; }
+  .status-dot.pending { @apply bg-warning; }
+  .status-dot.cleared { @apply bg-success; }
+  .status-dot.overdue { @apply bg-destructive; }
+
+  .mobile-card-item { @apply rounded-2xl border border-border p-4 bg-card transition-all active:scale-[0.99]; }
+  .mobile-card-item:hover { @apply shadow-card; }
+
+  .hover-scale { @apply transition-transform duration-150; }
+  .hover-scale:hover { transform: scale(1.05); }
+  .hover-scale:active { transform: scale(0.97); }
+
+  .clear-btn { @apply h-7 w-7 rounded-lg bg-secondary hover:bg-border/60 flex items-center justify-center transition-colors text-muted-foreground hover:text-foreground; }
+
+  .empty-state { @apply flex flex-col items-center justify-center py-16 text-center; }
+  .empty-state-icon { @apply h-12 w-12 rounded-2xl bg-secondary flex items-center justify-center mb-3 text-muted-foreground; }
+  .empty-state-text { @apply text-[14px] text-muted-foreground max-w-[240px]; }
 }
+
+@keyframes slideUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+@keyframes fadeBackdrop { from { opacity: 0; } to { opacity: 1; } }
+@keyframes scaleIn { from { transform: translate(-50%, -48%) scale(0.97); opacity: 0; } to { transform: translate(-50%, -50%) scale(1); opacity: 1; } }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes checkPop { 0% { transform: scale(0.7); opacity: 0; } 60% { transform: scale(1.15); } 100% { transform: scale(1); opacity: 1; } }
+@keyframes slideDown { from { transform: translateY(-10px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes pulseSoft { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+@keyframes shrinkOut { from { transform: scale(1); opacity: 1; } to { transform: scale(0.9); opacity: 0; } }
+
+.animate-check-pop { animation: checkPop 0.4s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+.stagger > * { animation: fadeUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.stagger > *:nth-child(1) { animation-delay: 0ms; }
+.stagger > *:nth-child(2) { animation-delay: 50ms; }
+.stagger > *:nth-child(3) { animation-delay: 100ms; }
+.stagger > *:nth-child(4) { animation-delay: 150ms; }
+.stagger > *:nth-child(5) { animation-delay: 200ms; }
+.stagger > *:nth-child(6) { animation-delay: 250ms; }
