@@ -12,6 +12,8 @@ import Vendors from "./pages/Vendors.tsx";
 import Assistant from "./pages/Assistant.tsx";
 import NewEntry from "./pages/NewEntry.tsx";
 import Documents from "./pages/Documents.tsx";
+import CashFlow from "./pages/CashFlow.tsx";
+import Reports from "./pages/Reports.tsx";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/checks" element={<Checks />} />
           <Route path="/vendors" element={<Vendors />} />
           <Route path="/documents" element={<Documents />} />
+          <Route path="/cashflow" element={<CashFlow />} />
+          <Route path="/reports" element={<Reports />} />
           <Route path="/assistant" element={<Assistant />} />
           <Route path="/new" element={<NewEntry />} />
           <Route path="*" element={<NotFound />} />
