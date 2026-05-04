@@ -27,17 +27,18 @@ export const AppShell = ({ children }: { children: ReactNode }) => {
               </div>
             </div>
             <div className="flex-1" />
-            <button className="hidden lg:inline-flex items-center gap-1.5 h-10 px-4 rounded-xl bg-foreground text-background text-[13px] font-medium hover:opacity-90 transition-opacity">
-              <Plus className="h-4 w-4" /> New entry
-            </button>
+            <Link to="/new" className="hidden lg:inline-flex items-center gap-1.5 h-10 px-4 rounded-xl bg-foreground text-background text-[13px] font-medium hover:opacity-90 transition-opacity">
+              <Plus className="h-4 w-4" /> Quick Add
+            </Link>
             <button className="h-10 w-10 rounded-xl hover:bg-secondary flex items-center justify-center relative">
               <Bell className="h-[18px] w-[18px]" strokeWidth={1.75} />
               <span className="absolute top-2.5 right-2.5 h-1.5 w-1.5 rounded-full bg-accent" />
             </button>
           </div>
         </header>
-        <main className="flex-1 pb-24 lg:pb-12">{children}</main>
+        <main className="flex-1 pb-28 lg:pb-12">{children}</main>
       </div>
+      <CopilotDock />
       <MobileNav />
     </div>
   );
