@@ -1,7 +1,9 @@
 import { ReactNode } from "react";
 import { AppSidebar } from "./AppSidebar";
 import { MobileNav } from "./MobileNav";
+import { CopilotDock } from "./CopilotDock";
 import { Search, Bell, Plus } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const AppShell = ({ children }: { children: ReactNode }) => {
   return (
